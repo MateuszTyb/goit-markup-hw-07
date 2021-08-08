@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navigation">
+        <a class="logo-lighttheme" class="header-logo" href="./index.html">Web<span>Studio</span></a>
+        <ul class="navigation-links list">
+          <li class="item"><a class="link" href="./index.html">Agencja</a>
+          </li>
+          <li class="item"><a id="current" class="link" href="./portfolio.html">Portfolio</a></li>
+          <li class="item"><a class="link" href="#Kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+      <ul class="contact-links list">
+        <li class="item"><a class="link" href="mailto:info@devstudio.com"><svg class="nav-icon" width=20 height=16>
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg><span>info@devstudio.com</span></a></li>
+        <li class="item"><a class="link" href="phone:+48111111111"><svg class="nav-icon" width=20 height=16>
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>+48 111 111 111</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="galler-nav">
+    <div class="container">
+      <ul class="galler-nav-list list">
+        <li class="item"><button class="gallery-btn" type="button">Wszystkie</button></li>
+        <li class="item"><button class="gallery-btn" type="button">Strony</button></li>
+        <li class="item"><button class="gallery-btn" type="button">Aplikacje</button></li>
+        <li class="item"><button class="gallery-btn" type="button">Dizajn</button></li>
+        <li class="item"><button class="gallery-btn" type="button">Marketing</button></li>
+      </ul>
+    </div>
+    <h1 hidden>Galeria zdjęć</h1>
+    <section class="gallery">
+      <div class="container">
+        <ul class="gallery-list list">
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img.jpg" width="370" height="294" alt="laptop z otwartą stroną intenetową" />
+              <div class="overlay">
+                <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
+                  wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+              </div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Technocrack</p>
+              <p class="gallery-list-subtitle">Strona internetowa</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img1.jpg" width="370" height="294"
+                alt="2 graczy koszykówki walczących o piłkę na abstrakcyjnym tle" />
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia. Qui omnis libero adipisci velit
+                  aspernatur dolor eaque blanditiis similique, neque itaque, harum quae nesciunt officiis dolore ullam
+                  eveniet! Ullam!</div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Grafika New Orlean vs Golden Star</p>
+              <p class="gallery-list-subtitle">Dizajn</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img2.jpg" width="370" height="294"
+                alt="logo restauacji seafood, rysunkowa ryba" />
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia. Qui omnis libero adipisci velit
+                  aspernatur dolor eaque blanditiis similique, neque itaque, harum quae nesciunt officiis dolore ullam
+                  eveniet! Ullam! </div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Restauracja Seafood</p>
+              <p class="gallery-list-subtitle">Aplikacja</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img3.jpg" width="370" height="294" alt="czarne słuchawki" />
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia. Qui omnis libero adipisci velit
+                  aspernatur dolor eaque blanditiis similique, neque itaque, harum quae nesciunt officiis dolore ullam
+                  eveniet! Ullam!  </div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Projekt Prime</p>
+              <p class="gallery-list-subtitle">Marketing</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img4.jpg" width="370" height="294"
+                alt="2 pudełka, białe i brązowe z logo firmy" />
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia. Qui omnis libero adipisci velit
+                  aspernatur dolor eaque blanditiis similique, neque itaque, harum quae nesciunt officiis dolore ullam
+                  eveniet! Ullam! </div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Projekt Boxes</p>
+              <p class="gallery-list-subtitle">Aplikacja</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img5.jpg" width="370" height="294"
+                alt="monitor komutera z wyświetlaną stroną internetową" />
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia. Qui omnis libero adipisci velit
+                  aspernatur dolor eaque blanditiis similique, neque itaque, harum quae nesciunt officiis dolore ullam
+                  eveniet! Ullam!</div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Inspiration has no Borders</p>
+              <p class="gallery-list-subtitle">Strona internetowa</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img6.jpg" width="370" height="294" alt="otwarty katalog z artykułami" />
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia. Qui omnis libero adipisci velit
+                  aspernatur dolor eaque blanditiis similique, neque itaque, harum quae nesciunt officiis dolore ullam
+                  eveniet! Ullam!</div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Magazyn Limited Edition</p>
+              <p class="gallery-list-subtitle">Dizajn</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img7.jpg" width="370" height="294" alt="zawieszka z napisem labeltag" />
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia. Qui omnis libero adipisci velit
+                  aspernatur dolor eaque blanditiis similique, neque itaque, harum quae nesciunt officiis dolore ullam
+                  eveniet! Ullam!</div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Projekt LAB</p>
+              <p class="gallery-list-subtitle">Marketing</p>
+            </div>
+          </li>
+          <li class="item">
+            <div class="overlay-container">
+              <img src="./images/portfolio/img8.jpg" width="370" height="294"
+                alt="laptop z otwartą biznesową stroną internetową" />
+              <div class="overlay">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, quia. Qui omnis libero adipisci velit
+                  aspernatur dolor eaque blanditiis similique, neque itaque, harum quae nesciunt officiis dolore ullam
+                  eveniet! Ullam!</p>
+              </div>
+            </div>
+            <div class="gallery-subtitle-wraper">
+              <p class="gallery-list-title">Growing Business</p>
+              <p class="gallery-list-subtitle">Aplikacja</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footeraddres">
+        <a class="logo-darktheme" href="#mainweb">Web<span>Studio</span></a>
+        <ul class="list">
+          <li class="item"><a class="footer-adres" href="https://goo.gl/maps/imskWViYpNZ9BuhFA" target="_blank">m.
+              Warszawa, Aleje
+              Jerozolimskie 21</a></li>
+          <li class="item">
+            <a class="footer-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item"> <a class="footer-link" href="phone:+48111111111">+48 111 111 111</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footersocial">
+        <p class="footerlinks">DOŁĄCZ DO NAS</p>
+        <ul class="social list">
+          <li class="social-list"><a class="social-links" href="insta"><svg class="icon" width=20 height=20>
+                <use href="./images/icons.svg#icon-instagram">
+              </svg></a></li>
+          <li class="social-list"><a class="social-links" href="tweter"><svg class="icon" width=20 height=20>
+                <use href="./images/icons.svg#icon-tweter">
+              </svg></a></li>
+          <li class="social-links"><a href="facebook"><svg class="icon" width=20 height=20>
+                <use href="./images/icons.svg#icon-facebook">
+              </svg></a></li>
+          <li class="social-links"><a href="linkedin"><svg class="icon" width=20 height=20>
+                <use href="./images/icons.svg#icon-linkedin">
+              </svg></a></li>
+        </ul>
+      </div>
+      <div class="footer-news  subscribe">
+        <p class="footerlinks">ZAPISZ SIĘ DO NEWSLETTERA</p>
+        <form action="" class="footer-form">
+          <input type="email" name="email" placeholder="E-mail" class="footer-email">
+          <button type="submit" class="footer-button"><span>Zapisz się</span>
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
