@@ -1,0 +1,131 @@
+
+.footer .container {
+    padding: 60px 0px;
+    display: flex;
+  }
+  
+  .footer {
+    background: #2F303A;
+    color: var(--third-color);
+    text-decoration: none;
+  }
+  
+  .footer .item:not(:first-child) {
+    margin-top: 9px;
+  }
+  
+  .footer .item:first-child {
+    margin-top: 20px;
+  }
+  
+  .footer-adres {
+    text-decoration: none;
+    color: var(--third-color);
+  }
+  
+  .footer-link {
+    color: var(--third-color);
+    opacity: 0.6;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+  }
+  
+  .footer-adres:hover,
+  .footer-adres:focus,
+  .footer-link:hover,
+  .footer-link:focus {
+    color: var(--secondary-color);
+    transition: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer span {
+    color: var(--third-color);
+  }
+  
+  .footersocial {
+    display: block;
+    justify-content: left;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 12px;
+  }
+  .footerlinks {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+  }
+  .footersocial .social {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  .footersocial .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 16px 0px;
+  }
+  
+  .social :not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .footersocial .social-links:hover,
+  .footersocial .social-links:focus {
+    background-color: var(--secondary-color);
+    fill: #ffffff;
+    color: #ffffff;
+    transition: color fill background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .footer-form {
+    margin-top: 20px;
+    display: flex;
+  }
+  
+  .footer-news {
+    margin: 12px 12px 12px 70px;
+  }
+  
+  .footer-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 28px 10px 42px;
+    border: 0px;
+    border-radius: 4px;
+    background: var(--secondary-color);
+    color: var(--third-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+  }
+  
+  .footer-button .icon {
+    margin-left: 24px;
+    fill: var(--third-color);
+    color: var(--third-color);
+  }
+  
+  .footer-email {
+    width: 358px;
+    height: 50px;
+    padding: 16px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2F303A;
+  }
+  
