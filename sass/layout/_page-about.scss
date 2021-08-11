@@ -1,4 +1,7 @@
-.about h2 {
+.about{
+  padding: 94px 0px;
+
+  &__header{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.167;
@@ -7,21 +10,20 @@
     color: var(--main-color);
     margin-bottom: 40px;
   }
-  
-  .container .about-list {
-    padding-bottom: 94px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .about-list .item {
-    margin: 15px 15px;
-    position: relative;
-  }
-  
-  .about-list p {
+
+  &__gallery
+  {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+&__item{ position: relative;}
+
+  &__title{
+    position: absolute;
     height: 70px;
     width: 100%;
     left: 0%;
@@ -37,5 +39,8 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    position: absolute;
+  
   }
+
+
+}
