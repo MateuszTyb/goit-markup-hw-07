@@ -1,61 +1,62 @@
-
-.customers {
+.customer{
     background-color: #fff;
-  }
-  
-  .customers-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.167;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-  }
-  .customers .container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding: 94px 0px;
     flex-wrap: wrap;
     align-items: center;
-  }
+    margin: 0px auto;
+
+    &__header {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.167;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: var(--main-color);
+    }
+
+    &__list {
+      margin: 50px auto 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 15px;
+      row-gap: 15px;
+      padding: 0 15px;
+    }
+    
+    &__item {
+      display: inline-flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      padding: auto;
+    }
+    
+    &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      width: 170px;
+      height: 92px;
+      fill: var(--greystyle-color);
+      color: var(--greystyle-color);
   
-  .customer-list {
-    margin: 50px auto 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 15px;
-    row-gap: 15px;
-    padding: 0 15px;
-  }
+      &:hover,
+      &:focus {
+        border: 1px solid var(--secondary-color);
+        fill: var(--secondary-color);
+        color: var(--secondary-color);
+        transition: color fill border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      }
   
-  .customer-list .item {
-    display: inline-flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    padding: auto;
-  }
-  
-  .customer-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    width: 170px;
-    height: 92px;
-    fill: var(--greystyle-color);
-    color: var(--greystyle-color);
-  }
-  
-  .customer-link:hover,
-  .customer-link:focus {
-    border: 1px solid var(--secondary-color);
-    fill: var(--secondary-color);
-    color: var(--secondary-color);
-    transition: color fill border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
   }
