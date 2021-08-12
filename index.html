@@ -40,7 +40,7 @@
     <h1 class="hero__header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
     <button class="hero__btn" type="button" data-modal-open>Zamów usługe</button>
   </section>
-  <div class="backdrop backdrop__is-hidden" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal__close" data-modal-close>
         <svg class="modal__icon-close" width="17" heigth="17">
@@ -78,18 +78,21 @@
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg></span>
           </li>
-          <li class="mod-form__item"><label for="user-opinion" class="mod-form__opinion">Komentarz</label>
+          <li class="mod-form__item">
+            <span class="mod-form__window"></span>
+            <label for="user-opinion" class="mod-form__opinion">Komentarz</label>
               <textarea id="user-opinion" type="text" name="user-opinion" placeholder="Wpisz tekst"
                 class="mod-form__comment" rows="5"></textarea>
             </span>
           </li>
-          <span class="checkbox-label">
-            <input class="checkbox" value="checked" type="checkbox" name="statute" required>
-            <p class="statute-box"> Oświadczam iż akceptuję <a href="" class="statute">Regulamin</a> i <a href=""
-                class="policy">Politykę Prywatności</a> </p>
+          <span class="mod-check">
+            <input class="mod-check__checkbox" value="checked" type="checkbox" name="statute" required>
+            <p class="mod-check__statement"> Oświadczam iż akceptuję <a href="" class="mod-check__statute">Regulamin</a> i <a href=""
+                class="mod-check__statute">Politykę Prywatności</a> </p>
           </span>
-          <button type="submit" class="modal-btn">Wyślij</button>
+          
         </ul>
+        <button type="submit" class="modal__btn">Wyślij</button>
       </form>
     </div>
   </div>
