@@ -9,11 +9,10 @@ margin: 16px 93px 16px 0px;
 color: var(--secondary-color);
 
 &__lighttheme {
-
   color: var(--main-color);
-  
-
   }
   
-  
+  &__darktheme {
+    color: var(--third-color);
+  } 
 }

@@ -1,18 +1,16 @@
 @import "./base/common";
 @import "./base/body";
-@import "./base/container";
 @import "./base/visually-hidden";
 
-@import "./components/logo-lighttheme";
-@import "./components/logo_darkthemes";
+@import "./components/logo";
 @import "./components/backdrop";
 
 @import "./layout/page-modal";
 @import "./layout/page-header";
 @import "./layout/page-hero";
 @import "./layout/page-main";
+@import "./layout/page-about";
 @import "./layout/page-employee";
 @import "./layout/page-customers";
 @import "./layout/page-footer";
 @import "./layout/page-gallery";
-@import "./layout/page-about";

@@ -1,67 +1,76 @@
+.footer {
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 15px;
+  background: #2f303a;
+  color: var(--third-color);
+  text-decoration: none;
+}
 
-.footer .container {
-    padding: 60px 0px;
-    display: flex;
+.f-address {
+  text-decoration: none;
+  color: var(--third-color);
+  margin-right: 70px;
+
+&__list{
+  margin-top: 26px;
+
+}
+
+&__item{
+  margin:4px 0px;
+}
+
+  &__map {
+    &:hover,
+    &:focus {
+      color: var(--secondary-color);
+      transition: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
-  
-  .footer {
-    background: #2F303A;
-    color: var(--third-color);
-    text-decoration: none;
-  }
-  
-  .footer .item:not(:first-child) {
-    margin-top: 9px;
-  }
-  
-  .footer .item:first-child {
-    margin-top: 20px;
-  }
-  
-  .footer-adres {
-    text-decoration: none;
-    color: var(--third-color);
-  }
-  
-  .footer-link {
+
+  &__link {
     color: var(--third-color);
     opacity: 0.6;
     font-size: 14px;
-    line-height: 1.71px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
+
+    &:hover,
+    &:focus {
+      color: var(--third-color);
+      opacity: 1;
+      transition: color opacity;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
-  
-  .footer-adres:hover,
-  .footer-adres:focus,
-  .footer-link:hover,
-  .footer-link:focus {
-    color: var(--secondary-color);
-    transition: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .footer span {
-    color: var(--third-color);
-  }
-  
-  .footersocial {
-    display: block;
-    justify-content: left;
-    align-items: center;
-    margin-left: 70px;
-    margin-top: 12px;
-  }
-  .footerlinks {
+}
+
+.f-social {
+  display: block;
+  justify-content: left;
+  align-items: center;
+  margin-top: 12px;
+
+  &__title {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
   }
-  .footersocial .social {
+
+  &__list {
     display: flex;
     justify-content: left;
     align-items: center;
+    column-gap: 10px;
   }
-  .footersocial .social-links {
+
+  &__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,32 +81,37 @@
     height: 44px;
     border-radius: 50%;
     margin: 16px 0px;
+
+    &:hover,
+    &:focus {
+      background-color: var(--secondary-color);
+      fill: #ffffff;
+      color: #ffffff;
+      transition: color fill background-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
+}
+
+.f-newsletter {
+  margin-left: 78px;
   
-  .social :not(:last-child) {
-    margin-right: 10px;
+
+  &__title {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    margin: 12px 12px 12px 00px;
   }
-  
-  .footersocial .social-links:hover,
-  .footersocial .social-links:focus {
-    background-color: var(--secondary-color);
-    fill: #ffffff;
-    color: #ffffff;
-    transition: color fill background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .footer-form {
-    margin-top: 20px;
-    display: flex;
-  }
-  
-  .footer-news {
-    margin: 12px 12px 12px 70px;
-  }
-  
-  .footer-button {
+
+&__form{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+  &__btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -111,14 +125,14 @@
     line-height: 1.875;
     letter-spacing: 0.06em;
   }
-  
-  .footer-button .icon {
+
+  &__icon {
     margin-left: 24px;
     fill: var(--third-color);
     color: var(--third-color);
   }
   
-  .footer-email {
+  &__email {
     width: 358px;
     height: 50px;
     padding: 16px;
@@ -126,6 +140,8 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    background: #2F303A;
+    background: #2f303a;
   }
-  
+
+}
+
