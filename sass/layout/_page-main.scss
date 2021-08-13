@@ -1,6 +1,5 @@
-.main{
-
-  display:inline-flex;
+.main {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 94px 0px;
@@ -10,14 +9,14 @@
     width: 270px;
     margin: 10px 15px;
   }
-  
+
   &__header {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
-    color: var(--main-color);
+    color: getColor(header-primary);
   }
 
   &__graphic {
@@ -25,24 +24,23 @@
     width: 270px;
     margin-bottom: 30px;
     border-radius: 4px;
-    background: #f5f4fa;
+    background:getColor(bg-secondary);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
 
-  &__article{
+  &__article {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--additional-color);
+    color:getColor(article-primary);
   }
 
-  &__content{
-    display:inline-flex;
+  &__content {
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
 }

@@ -2,8 +2,9 @@
   position: relative;
   visibility: visible;
   max-width: 528px;
-  background-color: var(--third-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: getColor(bg-additional);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin: auto;
   padding: 40px;
@@ -14,8 +15,8 @@
     padding: 10px 76px;
     border: 0px;
     border-radius: 4px;
-    background: var(--secondary-color);
-    color: var(--third-color);
+    background:getColor(decorative-primary);
+    color: getColor(decorative-additional);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -38,7 +39,7 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    background-color: var(--third-color);
+    background-color: getColor(bg-additional);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
@@ -47,8 +48,8 @@
     &:focus {
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       background-color: var(--secondary-color);
-      color: var(--third-color);
-      fill: var(--third-color);
+      color: getColor(decorative-primary);
+      fill: getColor(decorative-additional);
     }
   }
 
@@ -61,18 +62,17 @@
   }
 }
 
-.mod-form {
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__item {
     font-size: 12px;
     line-height: 1.21;
     letter-spacing: 0.01em;
-    color: #757575;
+    color: getColor(article-primary);
   }
 
   &__window {
@@ -92,13 +92,13 @@ align-items: center;
     &:hover,
     &:focus {
       outline: none;
-      border: 1px solid #2196f3;
+      border: 1px solid getColor(decorative-primary);
       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-      &:hover + .mod-form__icon,
-      &:focus + .mod-form__icon {
-        color: var(--secondary-color);
-        fill: var(--secondary-color);
+      &:hover + .modal-form__icon,
+      &:focus + .modal-form__icon {
+        color: getColor(decorative-primary);
+        fill: getColor(decorative-primary);
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
@@ -129,14 +129,13 @@ align-items: center;
     &:hover,
     &:focus {
       outline: none;
-      border: 1px solid #2196f3;
+      border: 1px solid getColor(decorative-primary);
       transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
 
-.mod-check{
-
+.modal-check {
   position: relative;
   display: flex;
   justify-content: space-evenly;
@@ -146,42 +145,34 @@ align-items: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--additional-color);
+    color: vargetColor(article-primary);
   }
 
-  &__statute
-  {
-    color: var(--secondary-color);
+  &__statute {
+    color: getColor(decorative-primary);
     text-decoration: underline;
   }
-
-
 
   &__checkbox {
     appearance: none;
     width: 16px;
     height: 15px;
-    border: 2px solid var(--main-color);
+    border: 2px solid getColor(header-primary);
     border-radius: 2px;
     margin-right: 8px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:checked {
-      fill: var(--third-color);
-      color: var(--third-color);
-      border-color: var(--secondary-color);
-      background-color: var(--secondary-color);
+      fill: getColor(decorative-additional);
+      color: getColor(decorative-additional);
+      border-color: getColor(decorative-primary);
+      background-color: getColor(decorative-primary);
       background-image: url("../images/check.svg");
       background-repeat: no-repeat;
     }
     &:hover {
-      border-color: var(--secondary-color);
+      border-color: getColor(decorative-primary);
     }
-  
   }
-
 }
-
-
-
-
